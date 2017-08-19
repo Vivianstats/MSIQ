@@ -1,0 +1,12 @@
+Package: MSIQ
+Title: Joint modeling of multiple RNA-seq samples for accurate isoform quantification
+Version: 0.0.1
+Date: 2017-08-17
+Authors: Wei Vivian Li, Anqi Zhao, Jingyi Jessica Li
+Maintainer: Wei Vivian Li <liw@ucla.edu>
+Description: MSIQ is developed for more accurate and robust isoform quantification, by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to (1) identify the consistent group of samples with homogeneous quality and (2) improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples with more weights on the consistent group. 
+Depends: R (>= 3.3.2), parallel, rPython, rbamtools, GenomicFeatures, GenomicAlignments
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
