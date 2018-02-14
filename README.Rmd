@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Introduction
 
-`MSIQ` is developed for more accurate and robust isoform quantification, by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to
+`MSIQ` is developed for accurate and robust isoform quantification, by integrating multiple RNA-seq samples under a Bayesian framework. Our method aims to
 
 - identify the consistent group of samples with homogeneous quality 
 - improve isoform quantification accuracy by jointly modeling multiple RNA-seq samples with more weights on the consistent group. 
@@ -67,8 +67,11 @@ result = msiq(D, gtf_path, bam_path, ncores)
 Below is an example output for one gene:
 ```{r eval = FALSE}
 transcriptID geneID frac FPKM_1 FPKM_2 FPKM_3 FPKM_4 sample1 sample2 sample3 sample4
-ENST00000366899 ENSG00000143507 0.9866 0.5164 0.6148 0.1041 0.1691 1 1 0 0 
-ENST00000468085 ENSG00000143507 0.0028 0.0025 0.003 5e-04 9e-04 1 1 0 0
-ENST00000477026 ENSG00000143507 0.0096 0.015 0.0178 0.0055 0.015 1 1 1 0
-ENST00000494642 ENSG00000143507 0.001 0.0021 0.0025 4e-04 8e-04 1 1 1 0
+ENST00000464356 ENSG00000116604 0.0996 0.0365 0.0549 0.016 0.0124 1 1 1 0
+ENST00000348159 ENSG00000116604 0.2601 0.0892 0.1342 0.0391 0.0304 1 1 1 0
+ENST00000360595 ENSG00000116604 0.629 0.4154 0.6249 0.1819 0.1417 1 1 1 0
+ENST00000368240 ENSG00000116604 0.0018 0.0021 0.0031 9e-04 7e-04 1 1 1 0
+ENST00000475587 ENSG00000116604 0.0032 0.0044 0.0067 0.0019 0.0015 1 1 1 0
+ENST00000493077 ENSG00000116604 4e-04 0.0024 0.0036 0.0011 8e-04 1 1 1 0
+ENST00000489057 ENSG00000116604 0.0059 0.0297 0.0447 0.013 0.0101 1 1 1 0
 ```
